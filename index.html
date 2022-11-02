@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi2Hand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                    Mi <span>2Hand</span>
+            </div>
+                    <ul>
+                        <li class="active"><i class="fa-solid fa-house"></i>HOME</li>
+                        <li><i class="fa-solid fa-user"></i>User</li>
+                        <li><i class="fa-solid fa-heart"></i>Favourite</li>
+                    </ul>
+                    <ul>
+                        <li><i class="fa-brands fa-square-facebook"></i>Facebook</li>
+                        <li><i class="fa-brands fa-tiktok"></i>Tiktok</li>
+                        <li><i class="fa-brands fa-youtube"></i>Youtube</li>
+                    </ul>
+
+
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>  
+            
+
+            <h2>Sản Phẩm </h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="img7.png" alt="">
+                    </div>    
+                    <div class="content">
+                        <div class="title">Quần Thể Dục</div>
+                        <div class="des">
+                        - Quần dài lắm yên tâm nhé!
+                        </div>
+                        <div class="price">59.000VND</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Thêm vào giỏ</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="img2.png" alt="">
+                    </div>    
+                    <div class="content">
+                        <div class="title">Áo thun trắng</div>
+                        <div class="des">
+                            - Vải: cạt tông<br>
+                            - Thiết kế: từ Pháp<br>
+                        </div>
+                        <div class="price">49.000VND</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Thêm vào giỏ</button>
+                        <button class="remove"onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="img3.png" alt="">
+                    </div>    
+                    <div class="content">
+                        <div class="title">Quần sọt</div>
+                        <div class="des">
+                            - Vải: mát lạnh bạc hà<br>
+                            - Thiết kế: từ Ý<br>
+                        </div>
+                        <div class="price">79.000VND</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Thêm vào giỏ</button>
+                        <button class="remove"onclick="Remove(3)"><i class="fa-solid fa-trash-can-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="img4.png" alt="">
+                    </div>    
+                    <div class="content">
+                        <div class="title">Thông tin 4</div>
+                        <div class="des">
+                            - Vải: êm<br>
+                            - Thiết kế: sang trọng<br>
+                        </div>
+                        <div class="price">59.000VND</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Thêm vào giỏ</button>
+                        <button class="remove"onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="5">
+                    <div class="img">
+                        <img src="img6.png" alt="">
+                    </div>    
+                    <div class="content">
+                        <div class="title">Áo thun đen</div>
+                        <div class="des">
+                            - Vải: êm<br>
+                            - Thiết kế: sang trọng<br>
+                        </div>
+                        <div class="price">59.000VND</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Thêm vào giỏ</button>
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="6">
+                    <div class="img">
+                        <img src="img7.png" alt="">
+                    </div>    
+                    <div class="content">
+                        <div class="title">Thông tin 4</div>
+                        <div class="des">
+                            - Vải: êm<br>
+                            - Thiết kế: sang trọng<br>
+                        </div>
+                        <div class="price">59.000VND</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Thêm vào giỏ</button>
+                        <button class="remove"onclick="Remove(6)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="cart">
+            <div class="name">CART</div>
+            <div class="listCart">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
